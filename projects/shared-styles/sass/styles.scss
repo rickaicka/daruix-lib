@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'PFDinDisplayPro-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PFDinDisplayPro-Regular'), url('../fonts/PFDinDisplayPro-Regular.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'PFDinDisplayPro-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PFDinDisplayPro-Bold'), url('../fonts/PFDinDisplayPro-Bold.woff') format('woff');
+}
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+/* CUSTOM SCSS FILES */
+@import "base/variables";
+@import "base/mixins";
+
+.ps__thumb-x, .ps__thumb-y {
+    background-color: $base-green!important;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: 'PFDinDisplayPro-Regular', sans-serif; }
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mat-date-range-input-start-wrapper{
+    width: calc(25% - 4px);
+    max-width: unset;
+}
+
+.mat-checkbox{
+    &-layout{
+        & .mat-checkbox-label{
+            @include textStyle(16px,  $text-gray, normal, unset, false, regular);
+        }
+    }
+    &-indeterminate, &-checked{
+        &.mat-accent{
+            & .mat-checkbox-background{
+                background: $hover-green!important;
+            }
+        }
+    }
+    &:not(.mat-checkbox-disabled),  &:active:not(.mat-checkbox-disabled).mat-accent{
+        &.mat-accent{
+            & .mat-ripple-element{
+                background: $hover-green!important;
+            }
+        }
+    }
+}

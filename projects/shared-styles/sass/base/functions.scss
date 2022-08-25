@@ -1,0 +1,15 @@
+@use "sass:math";
+
+@function calculateRem($size) {
+    $remSize: math.div($size, 16px);
+    @return #{$remSize}rem;
+}
+
+@function headingsType($typeText) {
+    @if ($typeText == h1 or $typeText == h2 or $typeText == h3 or $typeText == h4) {
+        @return $fontHeaders;
+    }
+    @if ($typeText == regular) {
+        @return $fontText;
+    }
+}

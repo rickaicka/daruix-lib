@@ -3,6 +3,11 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "daruix": [
+        "dist/daruix"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,

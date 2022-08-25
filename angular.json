@@ -3,5 +3,36 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "daruix": {
+      "projectType": "library",
+      "root": "projects/daruix",
+      "sourceRoot": "projects/daruix/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/daruix/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/daruix/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/daruix/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/daruix/src/test.ts",
+            "tsConfig": "projects/daruix/tsconfig.spec.json",
+            "karmaConfig": "projects/daruix/karma.conf.js"
+          }
+        }
+      }
+    }
   }
 }
