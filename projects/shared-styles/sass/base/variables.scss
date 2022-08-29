@@ -32,8 +32,8 @@ $base-error: #DA6428FF;
 $mobile: 430px;
 $mqDesk: 1441px;
 
-$fontText: 'Nunito';
-$fontHeaders: 'Blinker';
+$fontText: 'Nunito', sans-serif;
+$fontHeaders: 'Blinker', sans-serif;
 
 $colors:(
   'text-base': $text-black,
@@ -56,5 +56,47 @@ $colors:(
     background-color: $color !important
   }
 }
+
+
+
+
+
+
+//COLOR PALETTE
+//PRIMARY RED
+$red-primary: #BF3535;
+$red-surface: #F8EAEA;
+$red-border: #DF9A9A;
+$red-hover: #A22D2D;
+
+//PRIMARY BLUE
+$blue-primary: #175168;
+$blue-surface: #E7ECEE;
+$blue-border: #89A2AC;
+$blue-hover: #113B4B;
+
+//PRIMARY DANGER
+$danger-primary: #FFB673;
+$danger-surface: #FFF5ED;
+$danger-border: #FFE7D0;
+$danger-hover: #E89556;
+
+//PRIMARY SUCCESS
+$success-primary: #AED79C;
+$success-surface: #F8FFF4;
+$success-border: #D7EDCD;
+$success-hover: #7ABE5A;
+
+//PRIMARY INFO
+$info-primary: #BBBAFF;
+$info-surface: #F9F9FF;
+$info-border: #E8E8FF;
+$info-hover: #9C9BD4;
+
+//PRIMARY WARNING
+$warning-primary: #8C2626;
+$warning-surface: #F3E9E9;
+$warning-border: #C59292;
+$warning-hover: #772020;
 
 

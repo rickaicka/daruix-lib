@@ -1,6 +1,9 @@
 @import "../../../../shared-styles/sass/styles.scss";
 
 .btn-bg-color {
-  background-color: $base-red;
+  @include setBgColor($base-red, $base-dark-red);
+  font-family: headingsType(h1);
+  color: $white;
+  text-align: left;
 }
 
