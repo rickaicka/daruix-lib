@@ -21,88 +21,40 @@
 
 $bg-gray: #F1F1F1;
 $bg-disabled: rgba(0,0,0, 0.08);
-$border-gray: #A3A0A0;
-$text-gray: #868E96;
-$text-black: #000000;
-$disabled-gray: #666666;
+$text-black: #262123;
 $white: #ffffff;
-$base-green: #3B8B91;
-$hover-green: #56B7BE;
-$light-green: #4FD1C5;
-$base-blue: #3761A8;
-$light-blue: #5698c7;
-$base-orange: #F6AD55;
-$light-orange: #f4c294;
-$base-purple: #B794F4;
-$base-red:#B00020;
+$base-blue: #144659;
+$base-gray: #E1DCDC;
+$base-red: #BF3535;
+$base-dark-red: #8C2626;
+$base-error: #DA6428FF;
+
 $mobile: 430px;
 $mqDesk: 1441px;
 
-$fontText: 'PFDinDisplayPro-Regular';
-$fontHeaders: 'PFDinDisplayPro-Bold';
+$fontText: 'Nunito';
+$fontHeaders: 'Blinker';
 
 $colors:(
-    'text-base': $text-black,
-    'base': $base-green,
-    'hover': $hover-green,
-    'disabled': $bg-disabled,
-    'error': $base-red
-);
-
-$colors-cards: (
-    'white': $white,
-    'gray': $bg-gray
-);
-
-$bg-flag:(
-    'status':(
-        'All': #76C7F1,
-        'AllExceptDeleted': $light-blue,
-        'Pending': $light-orange,
-        'Ongoing': $light-green,
-        'Finished': $base-green,
-        'PendingAndOngoing': $base-orange,
-        'MeetingRequest': $base-purple,
-        'NotSaved': $text-gray,
-        'Defective':#E5703C,
-        'Deleted': $base-red,
-    ),
-    'boolean':(
-        'true': #76C7F1,
-        'false': $base-red
-    ),
+  'text-base': $text-black,
+  'base': $base-red,
+  'hover': $base-dark-red,
+  'disabled': $bg-disabled,
+  'blue': $base-blue,
+  'error': $base-error
 );
 
 
 @each $name, $color in $colors{
-    .text-color-#{ $name } {
-        color: $color !important
-    }
+  .text-color-#{ $name } {
+    color: $color !important
+  }
 }
 
 @each $name, $color in $colors{
-    .bg-color-#{ $name } {
-        background-color: $color !important
-    }
-}
-
-
-@each $name, $flag in $bg-flag {
-    @each $color, $f in $flag{
-        .flag-#{$name}--#{$color}{
-            background-color: $f !important;
-            padding: 8px 16px !important;
-            border-radius: 16px;
-            width: 160px;
-            margin: 0 auto !important;
-            text-align: center;
-            @include textStyle(14px, $white, normal, unset, false, regular, true); 
-            letter-spacing: 1px;
-            @if($name == 'boolean'){
-                @include textStyle(14px, $white, normal, capitalize, false, regular, true); 
-            }
-        }
-    }
+  .bg-color-#{ $name } {
+    background-color: $color !important
+  }
 }
 
 
