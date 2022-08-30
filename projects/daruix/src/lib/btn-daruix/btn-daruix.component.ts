@@ -21,6 +21,6 @@ export class BtnDaruixComponent implements AfterViewInit  {
   @ViewChild('btnComponent', {static:true}) btnComponent!: MatButton;
 
   ngAfterViewInit(): void {
-    this.btnComponent?._elementRef.nativeElement?.classList.add(`${this.typeBtn}-primary`)
+    this.btnComponent?._elementRef.nativeElement?.classList.add(`${(this.typeBtn ? this.typeBtn : 'red')}-primary`)
   }
 }
