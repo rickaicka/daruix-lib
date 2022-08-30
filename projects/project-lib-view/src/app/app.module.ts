@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BtnDaruixPageComponent } from './btn-daruix-page/btn-daruix-page.component';
 import {DaruixModule} from "../../../daruix/src/lib/daruix.module";
+import { CheckboxDaruixPageComponent } from './checkbox-daruix-page/checkbox-daruix-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BtnDaruixPageComponent
+    BtnDaruixPageComponent,
+    CheckboxDaruixPageComponent
   ],
   imports: [
     BrowserModule,

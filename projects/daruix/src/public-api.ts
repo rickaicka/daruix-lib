@@ -7,3 +7,5 @@ export * from './lib/daruix.component';
 export * from './lib/daruix.module';
 export * from './lib/btn-daruix/btn-daruix.component';
 export * from './lib/btn-daruix/btn-daruix.module';
+export * from './lib/checkbox-daruix/checkbox-daruix.component';
+export * from './lib/checkbox-daruix/checkbox-daruix.module';
