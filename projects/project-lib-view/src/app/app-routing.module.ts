@@ -9,7 +9,7 @@ const routes: Routes = [
     component: BtnDaruixPageComponent
   },
   {
-    path: 'daruix-checkout',
+    path: 'daruix-checkbox',
     component: CheckboxDaruixComponent
   }
 ];
