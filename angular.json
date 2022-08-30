@@ -59,7 +59,8 @@
               "projects/project-lib-view/src/assets"
             ],
             "styles": [
-              "projects/project-lib-view/src/styles.scss"
+              "projects/project-lib-view/src/styles.scss",
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
             ],
             "scripts": []
           },

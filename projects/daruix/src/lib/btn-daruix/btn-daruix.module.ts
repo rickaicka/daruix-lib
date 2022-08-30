@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BtnDaruixComponent } from './btn-daruix.component';
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
+import {MatCheckboxModule} from "@angular/material/checkbox";
 
 
 
@@ -13,12 +14,14 @@ import {MatIconModule} from "@angular/material/icon";
   imports: [
     CommonModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatCheckboxModule
   ],
   exports: [
     BtnDaruixComponent,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatCheckboxModule
   ]
 })
 export class BtnDaruixModule { }

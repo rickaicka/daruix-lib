@@ -1,134 +1,152 @@
-<div class="container-btn-page py-3">
-  <div class="row">
-    <div class="col-2">
-      <lib-btn-daruix
-        [labelBtn]="'Red'"
-        [typeBtn]="'red'"></lib-btn-daruix>
-    </div>
-    <div class="col-2">
-      <lib-btn-daruix
-        [labelBtn]="'Blue'"
-        [typeBtn]="'blue'"></lib-btn-daruix>
-    </div>
-    <div class="col-2">
-      <lib-btn-daruix
-        [labelBtn]="'Danger'"
-        [typeBtn]="'danger'"></lib-btn-daruix>
-    </div>
-    <div class="col-2">
-      <lib-btn-daruix
-        [labelBtn]="'Success'"
-        [typeBtn]="'success'"></lib-btn-daruix>
-    </div>
-    <div class="col-2">
-      <lib-btn-daruix
-        [labelBtn]="'Info'"
-        [typeBtn]="'info'"></lib-btn-daruix>
-    </div>
-    <div class="col-2">
-      <lib-btn-daruix
-        [labelBtn]="'Warning'"
-        [typeBtn]="'warning'"></lib-btn-daruix>
-    </div>
-  </div>
-  <div class="row mt-2">
-    <div class="col-2">
-      <lib-btn-daruix
-        [labelBtn]="'Red'"
-        [typeBtn]="'red-outline'"
-        [icon]="'home'"></lib-btn-daruix>
-    </div>
-    <div class="col-2">
-      <lib-btn-daruix
-        [labelBtn]="'Blue'"
-        [typeBtn]="'blue-outline'"
-        [icon]="'home'"></lib-btn-daruix>
-    </div>
-    <div class="col-2">
-      <lib-btn-daruix
-        [labelBtn]="'Danger'"
-        [typeBtn]="'danger-outline'"
-        [icon]="'home'"></lib-btn-daruix>
-    </div>
-    <div class="col-2">
-      <lib-btn-daruix
-        [labelBtn]="'Success'"
-        [typeBtn]="'success-outline'"
-        [icon]="'home'"></lib-btn-daruix>
-    </div>
-    <div class="col-2">
-      <lib-btn-daruix
-        [labelBtn]="'Info'"
-        [typeBtn]="'info-outline'"
-        [icon]="'home'"></lib-btn-daruix>
-    </div>
-    <div class="col-2">
-      <lib-btn-daruix
-        [labelBtn]="'Warning'"
-        [typeBtn]="'warning-outline'"
-        [icon]="'home'"></lib-btn-daruix>
-    </div>
-  </div>
-  <div class="row mt-2">
-    <div class="col-2">
-      <lib-btn-daruix
-        [typeBtn]="'red-outline'"
-        [icon]="'home'"></lib-btn-daruix>
-    </div>
-    <div class="col-2">
-      <lib-btn-daruix
-        [typeBtn]="'blue-outline'"
-        [icon]="'home'"></lib-btn-daruix>
-    </div>
-    <div class="col-2">
-      <lib-btn-daruix
-        [typeBtn]="'danger-outline'"
-        [icon]="'home'"></lib-btn-daruix>
-    </div>
-    <div class="col-2">
-      <lib-btn-daruix
-        [typeBtn]="'success-outline'"
-        [icon]="'home'"></lib-btn-daruix>
-    </div>
-    <div class="col-2">
-      <lib-btn-daruix
-        [typeBtn]="'info-outline'"
-        [icon]="'home'"></lib-btn-daruix>
-    </div>
-    <div class="col-2">
-      <lib-btn-daruix
-        [typeBtn]="'warning-outline'"
-        [icon]="'home'"></lib-btn-daruix>
-    </div>
-  </div>
+<div class="vh-100 bg-light container-fluid py-3">
 
-  <div class="row mt-2">
-    <div class="col-12">
-      <p>How to use</p>
+  <mat-card class="shadow p-3 mb-4 bg-body rounded">
+    <div class="row mt-2">
+      <div class="col-12">
+        <p class="fs-2">How to use</p>
 
-      <span>The tag: </span>
-      <code>&lt;lib-btn-daruix&gt;</code>
-      <code>&lt;/lib-btn-daruix&gt;</code>
-      <br>
-      <br>
-      <span>The <code>@Input()</code> list: </span>
-      <br>
-      <code>[labelBtn]</code><span> -> set the label of the button</span>
-      <br>
-      <code>[typeBtn]</code><span> -> set the type of the button and set his colors</span>
-      <br>
-      <code>[icon]</code><span> -> set the icon of the button<small><var>*is optional</var></small></span>
+        <span>The tag: </span>
+        <code>&lt;lib-btn-daruix&gt;</code>
+        <code>&lt;/lib-btn-daruix&gt;</code>
+        <br>
+        <br>
+        <span>The <code>@Input()</code> list: </span>
+        <br>
+        <code>[labelBtn]</code><span> -> set the label of the button</span>
+        <br>
+        <code>[typeBtn]</code><span> -> set the type of the button and set his colors</span>
+        <br>
+        <code>[icon]</code><span> -> set the icon of the button<small><var>*is optional</var></small></span>
+      </div>
+      <div class="col-12 mt-2">
+        <span>Example: </span>
+        <code>&lt;lib-btn-daruix  <code>[labelBtn]</code>='Red'  <code>[typeBtn]</code>='red'  <code>[icon]</code>='home'&gt;</code>
+        <code>&lt;/lib-btn-daruix&gt;</code>
+      </div>
+      <div class="col-2 mt-2">
+        <lib-btn-daruix
+          [labelBtn]="'Red'"
+          [typeBtn]="'red'"
+          [icon]="'home'"></lib-btn-daruix>
+      </div>
     </div>
-    <div class="col-12 mt-2">
-      <span>Example: </span>
-      <code>&lt;lib-btn-daruix  <code>[labelBtn]</code>='Red'  <code>[typeBtn]</code>='red'  <code>[icon]</code>='home'&gt;</code>
-      <code>&lt;/lib-btn-daruix&gt;</code>
+  </mat-card>
+
+  <mat-card class="shadow p-3 mb-5 bg-body rounded">
+    <p class="fs-4">All examples</p>
+    <div class="row">
+      <div class="col-2">
+        <lib-btn-daruix
+          [labelBtn]="'Red'"
+          [typeBtn]="'red'"></lib-btn-daruix>
+        <span class="fs-6"><small>.red-primary</small></span>
+      </div>
+      <div class="col-2">
+        <lib-btn-daruix
+          [labelBtn]="'Blue'"
+          [typeBtn]="'blue'"></lib-btn-daruix>
+        <span class="fs-6"><small>.blue-primary</small></span>
+      </div>
+      <div class="col-2">
+        <lib-btn-daruix
+          [labelBtn]="'Danger'"
+          [typeBtn]="'danger'"></lib-btn-daruix>
+        <span class="fs-6"><small>.danger-primary</small></span>
+      </div>
+      <div class="col-2">
+        <lib-btn-daruix
+          [labelBtn]="'Success'"
+          [typeBtn]="'success'"></lib-btn-daruix>
+        <span class="fs-6"><small>.success-primary</small></span>
+      </div>
+      <div class="col-2">
+        <lib-btn-daruix
+          [labelBtn]="'Info'"
+          [typeBtn]="'info'"></lib-btn-daruix>
+        <span class="fs-6"><small>.info-primary</small></span>
+      </div>
+      <div class="col-2">
+        <lib-btn-daruix
+          [labelBtn]="'Warning'"
+          [typeBtn]="'warning'"></lib-btn-daruix>
+        <span class="fs-6"><small>.warning-primary</small></span>
+      </div>
     </div>
-    <div class="col-2 mt-2">
-      <lib-btn-daruix
-        [labelBtn]="'Red'"
-        [typeBtn]="'red'"
-        [icon]="'home'"></lib-btn-daruix>
+    <div class="row mt-2">
+      <div class="col-2">
+        <lib-btn-daruix
+          [labelBtn]="'Red'"
+          [typeBtn]="'red-outline'"
+          [icon]="'home'"></lib-btn-daruix>
+        <span class="fs-6"><small>.red-outline-primary</small></span>
+      </div>
+      <div class="col-2">
+        <lib-btn-daruix
+          [labelBtn]="'Blue'"
+          [typeBtn]="'blue-outline'"
+          [icon]="'home'"></lib-btn-daruix>
+        <span class="fs-6"><small>.blue-outline-primary</small></span>
+      </div>
+      <div class="col-2">
+        <lib-btn-daruix
+          [labelBtn]="'Danger'"
+          [typeBtn]="'danger-outline'"
+          [icon]="'home'"></lib-btn-daruix>
+        <span class="fs-6"><small>.danger-outline-primary</small></span>
+      </div>
+      <div class="col-2">
+        <lib-btn-daruix
+          [labelBtn]="'Success'"
+          [typeBtn]="'success-outline'"
+          [icon]="'home'"></lib-btn-daruix>
+        <span class="fs-6"><small>.success-outline-primary</small></span>
+      </div>
+      <div class="col-2">
+        <lib-btn-daruix
+          [labelBtn]="'Info'"
+          [typeBtn]="'info-outline'"
+          [icon]="'home'"></lib-btn-daruix>
+        <span class="fs-6"><small>.info-outline-primary</small></span>
+      </div>
+      <div class="col-2">
+        <lib-btn-daruix
+          [labelBtn]="'Warning'"
+          [typeBtn]="'warning-outline'"
+          [icon]="'home'"></lib-btn-daruix>
+        <span class="fs-6"><small>.warning-outline-primary</small></span>
+      </div>
     </div>
-  </div>
+    <div class="row mt-2">
+      <div class="col-2">
+        <lib-btn-daruix
+          [typeBtn]="'red-outline'"
+          [icon]="'home'"></lib-btn-daruix>
+      </div>
+      <div class="col-2">
+        <lib-btn-daruix
+          [typeBtn]="'blue-outline'"
+          [icon]="'home'"></lib-btn-daruix>
+      </div>
+      <div class="col-2">
+        <lib-btn-daruix
+          [typeBtn]="'danger-outline'"
+          [icon]="'home'"></lib-btn-daruix>
+      </div>
+      <div class="col-2">
+        <lib-btn-daruix
+          [typeBtn]="'success-outline'"
+          [icon]="'home'"></lib-btn-daruix>
+      </div>
+      <div class="col-2">
+        <lib-btn-daruix
+          [typeBtn]="'info-outline'"
+          [icon]="'home'"></lib-btn-daruix>
+      </div>
+      <div class="col-2">
+        <lib-btn-daruix
+          [typeBtn]="'warning-outline'"
+          [icon]="'home'"></lib-btn-daruix>
+      </div>
+    </div>
+  </mat-card>
 </div>
