@@ -1,17 +1,13 @@
 @import './variables';
 
-.btn-daruix{
-  padding: calculateRem(8);
-  border-radius: calculateRem(10) calculateRem(0) calculateRem(10) calculateRem(0);
-  font-family: $fontHeaders;
-  width: 100%;
-}
-
-
-@mixin setBgColor($color, $colorHover) {
+@mixin setBgColor($color, $colorHover, $outline: false) {
   @extend .btn-daruix;
   background-color: $color;
+  border: 1px solid $color;
   &:hover{
     background-color: $colorHover;
+    @if $outline{
+      color: $outline;
+    }
   }
 }

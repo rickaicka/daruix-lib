@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BtnDaruixPageComponent } from './btn-daruix-page/btn-daruix-page.component';
 import {DaruixModule} from "../../../daruix/src/lib/daruix.module";
+import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import {DaruixModule} from "../../../daruix/src/lib/daruix.module";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DaruixModule
+    DaruixModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
