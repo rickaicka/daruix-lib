@@ -1,2 +1,9 @@
-
-<button mat-raised-button color="primary" class="btn-bg-color">Teste</button>
+<button
+  mat-raised-button
+  class="btn-base d-flex flex-row align-items-center"
+  #btnComponent
+  [ngClass]="{'justify-content-center': (!labelBtn || !icon)}"
+>
+  <mat-icon *ngIf="icon">{{icon}}</mat-icon>
+  {{labelBtn}}
+</button>

@@ -1,6 +1,5 @@
 @import './functions';
 
-
 @mixin textStyle($size, $color, $weight, $transform, $isLink: false, $typeText, $isImportant: false){
     font-family: headingsType($typeText);
     @if $isLink{
@@ -57,11 +56,6 @@ $colors:(
   }
 }
 
-
-
-
-
-
 //COLOR PALETTE
 //PRIMARY RED
 $red-primary: #BF3535;
@@ -94,7 +88,7 @@ $info-border: #E8E8FF;
 $info-hover: #9C9BD4;
 
 //PRIMARY WARNING
-$warning-primary: #8C2626;
+$warning-primary: #a92f2f;
 $warning-surface: #F3E9E9;
 $warning-border: #C59292;
 $warning-hover: #772020;

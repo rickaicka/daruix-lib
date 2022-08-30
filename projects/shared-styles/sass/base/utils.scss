@@ -1,0 +1,77 @@
+@import './mixins';
+
+.btn-base {
+  font-family: headingsType(h1);
+  color: $white;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.btn-daruix{
+  padding: 0 calculateRem(12);
+  height: calculateRem(32);
+  border-radius: calculateRem(10) calculateRem(0) calculateRem(10) calculateRem(0);
+  font-family: $fontHeaders;
+  width: 100%;
+  & mat-icon{
+    height: unset;
+    font-size: calculateRem(18);
+    vertical-align: middle;
+  }
+}
+
+.red-primary{
+  @include setBgColor($red-primary, $red-hover);
+}
+.red-outline-primary{
+  @include setBgColor($red-surface, $red-hover, $red-surface);
+  color: $red-primary;
+  border: 1px solid $red-primary;
+}
+
+.blue-primary{
+  @include setBgColor($blue-primary, $blue-hover);
+}
+.blue-outline-primary{
+  @include setBgColor($blue-surface, $blue-hover, $blue-surface);
+  color: $blue-primary;
+  border: 1px solid $blue-primary;
+}
+
+.danger-primary{
+  @include setBgColor($danger-primary, $danger-hover);
+}
+.danger-outline-primary{
+  @include setBgColor($danger-surface, $danger-hover, $danger-surface);
+  color: $danger-primary;
+  border: 1px solid $danger-primary;
+}
+
+.success-primary{
+  @include setBgColor($success-primary, $success-hover);
+}
+.success-outline-primary{
+  @include setBgColor($success-surface, $success-hover, $success-surface);
+  color: $success-primary;
+  border: 1px solid $success-primary;
+}
+
+.info-primary{
+  @include setBgColor($info-primary, $info-hover);
+}
+.info-outline-primary{
+  @include setBgColor($info-surface, $info-hover, $info-surface);
+  color: $info-primary;
+  border: 1px solid $info-primary;
+}
+
+.warning-primary{
+  @include setBgColor($warning-primary, $warning-hover);
+}
+.warning-outline-primary{
+  @include setBgColor($warning-surface, $warning-hover, $warning-surface);
+  color: $warning-primary;
+  border: 1px solid $warning-primary;
+}
