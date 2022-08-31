@@ -11,3 +11,17 @@
     }
   }
 }
+
+@mixin checkboxColors($bgColor, $borderColor){
+  ::ng-deep .mat-checkbox{
+    &-checked.mat-accent, &-indeterminate.mat-accent{
+      & .mat-checkbox-background{
+        background-color: $bgColor!important;
+      }
+    }
+    &-frame{
+      border-color: $borderColor;
+    }
+  }
+}
+
