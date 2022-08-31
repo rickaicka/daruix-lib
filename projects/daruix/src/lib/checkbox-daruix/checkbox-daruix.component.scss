@@ -14,7 +14,5 @@ background-color: $base-red !important;
 }
 
 ::ng-deep .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
-    background-color: $red-border!important;
-    margin: 4px;
-    display: block;
+    background-color: $base-red !important;
 }
