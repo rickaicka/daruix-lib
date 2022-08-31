@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import { MatCheckbox } from '@angular/material/checkbox';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'lib-checkbox-daruix',
@@ -7,9 +9,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckboxDaruixComponent implements OnInit {
 
+
+  // a pessoa pode determinar a cor do checkbox (tipo), se ele é indeterminado, se ele está desabilitado e sua label.
+
+  clickCheckbox: Subject<any> = new Subject;
+
+  @Input() labelCheckbox?: string;
+  @Input() typeCheckbox?: string;
+  @Input() disabledCheckbox?: boolean;
+  @Input() indeterminateCheckbox?: boolean;
+  @ViewChild('checkboxComponent', {static:true}) checkboxComponent!: ElementRef;
+
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.labelCheckbox)
+  }
+
+  ngAfterViewInit(): void {
+    console.log(this.labelCheckbox)
+    this.checkboxComponent?.nativeElement?.classList.add(`${(this.typeCheckbox ? this.typeCheckbox : 'red')}-primary-checkbox`)
   }
 
 }
