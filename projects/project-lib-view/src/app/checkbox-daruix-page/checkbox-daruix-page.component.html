@@ -1,1 +1,156 @@
-<lib-checkbox-daruix [lbl]="'Zuia'"></lib-checkbox-daruix>
+<div class="vh-100 bg-light container-fluid py-3">
+
+    <mat-card class="shadow p-3 mb-4 bg-body rounded">
+      <div class="row mt-2">
+        <div class="col-12">
+          <p class="fs-2">How to use</p>
+  
+          <span>The tag: </span>
+          <code>&lt;lib-checkbox-daruix&gt;</code>
+          <code>&lt;/lib-checkbox-daruix&gt;</code>
+          <br>
+          <br>
+          <span>The <code>@Input()</code> list: </span>
+          <br>
+          <code>[labelCheckbox]</code><span> -> set the label of the checkbox</span>
+          <br>
+          <code>[typeCheckbox]</code><span> -> set the type of the checkbox and set it's colors</span>
+          <br>
+          <code>[indeterminateCheckbox]</code><span> -> set if checkbox is indeterminate the button<small><var>*is optional</var></small></span>
+          <br>
+          <code>[disabledCheckbox]</code><span> -> set if checkbox is disabled of the button<small><var>*is optional</var></small></span>
+        </div>
+        <div class="col-12 mt-2">
+          <span>Example: </span>
+          <code>&lt;lib-checkbox-daruix  <code>[labelCheckbox]</code>='Red'  <code>[typeCheckbox]</code>='red'  <code>[indeterminateCheckbox]</code>=true  <code>[disabledCheckbox]</code>=true&gt;</code>
+          <code>&lt;/lib-checkbox-daruix&gt;</code>
+        </div>
+        <div class="col-2 mt-2">
+          <lib-checkbox-daruix
+            [labelCheckbox]="'Red'"
+            [typeCheckbox]="'red'"
+            [indeterminateCheckbox]="true"
+            [disabledCheckbox]="true"></lib-checkbox-daruix>
+        </div>
+      </div>
+    </mat-card>
+  
+    <mat-card class="shadow p-3 mb-5 bg-body rounded">
+      <p class="fs-4">All examples</p>
+      <div class="row">
+        <div class="col-2">
+          <lib-checkbox-daruix
+            [labelCheckbox]="'Red'"
+            [typeCheckbox]="'red'"></lib-checkbox-daruix>
+          <span class="fs-6"><small>.red-primary-Checkbox</small></span>
+        </div>
+        <div class="col-2">
+          <lib-checkbox-daruix
+            [labelCheckbox]="'Blue'"
+            [typeCheckbox]="'blue'"></lib-checkbox-daruix>
+          <span class="fs-6"><small>.blue-primary-Checkbox</small></span>
+        </div>
+        <div class="col-2">
+          <lib-checkbox-daruix
+            [labelCheckbox]="'Danger'"
+            [typeCheckbox]="'danger'"></lib-checkbox-daruix>
+          <span class="fs-6"><small>.danger-primary-Checkbox</small></span>
+        </div>
+        <div class="col-2">
+          <lib-checkbox-daruix
+            [labelCheckbox]="'Success'"
+            [typeCheckbox]="'success'"></lib-checkbox-daruix>
+          <span class="fs-6"><small>.success-primary-Checkbox</small></span>
+        </div>
+        <div class="col-2">
+          <lib-checkbox-daruix
+            [labelCheckbox]="'Info'"
+            [typeCheckbox]="'info'"></lib-checkbox-daruix>
+          <span class="fs-6"><small>.info-primary-Checkbox</small></span>
+        </div>
+        <div class="col-2">
+          <lib-checkbox-daruix
+            [labelCheckbox]="'Warning'"
+            [typeCheckbox]="'warning'"></lib-checkbox-daruix>
+          <span class="fs-6"><small>.warning-primary-Checkbox</small></span>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-2">
+          <lib-checkbox-daruix
+            [labelCheckbox]="'Red'"
+            [typeCheckbox]="'red'"
+            [indeterminateCheckbox]="true"></lib-checkbox-daruix>
+          <span class="fs-6"><small>.red-primary-indeterminate-checkbox</small></span>
+        </div>
+        <div class="col-2">
+          <lib-checkbox-daruix
+            [labelCheckbox]="'Blue'"
+            [typeCheckbox]="'blue'"
+            [indeterminateCheckbox]="true"></lib-checkbox-daruix>
+          <span class="fs-6"><small>.blue-primary-indeterminate-checkbox</small></span>
+        </div>
+        <div class="col-2">
+          <lib-checkbox-daruix
+            [labelCheckbox]="'Danger'"
+            [typeCheckbox]="'danger'"
+            [indeterminateCheckbox]="true"></lib-checkbox-daruix>
+          <span class="fs-6"><small>.danger-primary-indeterminate-checkbox</small></span>
+        </div>
+        <div class="col-2">
+          <lib-checkbox-daruix
+            [labelCheckbox]="'Success'"
+            [typeCheckbox]="'success'"
+            [indeterminateCheckbox]="true"></lib-checkbox-daruix>
+          <span class="fs-6"><small>.success-primary-indeterminate-checkbox</small></span>
+        </div>
+        <div class="col-2">
+          <lib-checkbox-daruix
+            [labelCheckbox]="'Info'"
+            [typeCheckbox]="'info'"
+            [indeterminateCheckbox]="true"></lib-checkbox-daruix>
+          <span class="fs-6"><small>.info-primary-indeterminate-checkbox</small></span>
+        </div>
+        <div class="col-2">
+          <lib-checkbox-daruix
+            [labelCheckbox]="'Warning'"
+            [typeCheckbox]="'warning'"
+            [indeterminateCheckbox]="true"></lib-checkbox-daruix>
+          <span class="fs-6"><small>.warning-primary-indeterminate-checkbox</small></span>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-2">
+          <lib-checkbox-daruix
+            [typeCheckbox]="'red'"
+            [indeterminateCheckbox]="true"></lib-checkbox-daruix>
+        </div>
+        <div class="col-2">
+          <lib-checkbox-daruix
+            [typeCheckbox]="'blue'"
+            [indeterminateCheckbox]="true"></lib-checkbox-daruix>
+        </div>
+        <div class="col-2">
+          <lib-checkbox-daruix
+            [typeCheckbox]="'danger'"
+            [indeterminateCheckbox]="true"></lib-checkbox-daruix>
+        </div>
+        <div class="col-2">
+          <lib-checkbox-daruix
+            [typeCheckbox]="'success'"
+            [indeterminateCheckbox]="true"></lib-checkbox-daruix>
+        </div>
+        <div class="col-2">
+          <lib-checkbox-daruix
+            [typeCheckbox]="'info'"
+            [indeterminateCheckbox]="true"></lib-checkbox-daruix>
+        </div>
+        <div class="col-2">
+          <lib-checkbox-daruix
+            [typeCheckbox]="'warning'"
+            [indeterminateCheckbox]="true"></lib-checkbox-daruix>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+  
