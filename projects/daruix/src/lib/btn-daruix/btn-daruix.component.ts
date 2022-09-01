@@ -1,5 +1,4 @@
 import {AfterViewInit, Component, Input, ViewChild} from '@angular/core';
-import {MatIcon} from "@angular/material/icon";
 import { Subject } from 'rxjs';
 import {MatButton} from "@angular/material/button";
 

@@ -5,12 +5,24 @@ import {BtnDaruixPageComponent} from "./btn-daruix-page/btn-daruix-page.componen
 
 const routes: Routes = [
   {
+    path:'',
+    redirectTo: 'daruix-btn',
+    pathMatch: 'full'
+  },
+  {
     path: 'daruix-btn',
-    component: BtnDaruixPageComponent
+    loadChildren: () =>
+      import("./btn-daruix-page/btn-daruix-page.module").then(
+        (che) => che.BtnDaruixPageModule
+      ),
   },
   {
     path: 'daruix-checkbox',
-    component: CheckboxDaruixComponent
+    loadChildren: () =>
+      import("./checkbox-daruix-page/checkbox-daruix-page.module").then(
+        (che) => che.CheckboxDaruixPageModule
+      ),
+
   }
 ];
 
