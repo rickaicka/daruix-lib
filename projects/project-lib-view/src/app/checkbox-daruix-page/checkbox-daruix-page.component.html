@@ -22,7 +22,7 @@
         </div>
         <div class="col-12 mt-2">
           <span>Example: </span>
-          <code>&lt;drx-checkbox  <code>[labelCheckbox]</code>='Red'  <code>[typeCheckbox]</code>='red'  <code>[indeterminateCheckbox]</code>=true  <code>[disabledCheckbox]</code>=true&gt;</code>
+          <code>&lt;drx-checkbox  <code>[labelCheckbox]</code>='Red'  <code>[typeCheckbox]</code>='red'  <code>[indeterminateCheckbox]</code>=true  <code>[disabledCheckbox]</code>=false&gt;</code>
           <code>&lt;/drx-checkbox&gt;</code>
         </div>
         <div class="col-2 mt-2">
@@ -30,7 +30,7 @@
             [labelCheckbox]="'Red'"
             [typeCheckbox]="'red'"
             [indeterminateCheckbox]="true"
-            [disabledCheckbox]="true"></drx-checkbox>
+            ></drx-checkbox>
         </div>
       </div>
     </mat-card>
@@ -42,37 +42,37 @@
           <drx-checkbox
             [labelCheckbox]="'Red'"
             [typeCheckbox]="'red'"></drx-checkbox>
-          <span class="fs-6"><small>.red-primary-Checkbox</small></span>
+          <span class="fs-6"><small>.red-primary-checkbox</small></span>
         </div>
         <div class="col-2">
           <drx-checkbox
             [labelCheckbox]="'Blue'"
             [typeCheckbox]="'blue'"></drx-checkbox>
-          <span class="fs-6"><small>.blue-primary-Checkbox</small></span>
+          <span class="fs-6"><small>.blue-primary-checkbox</small></span>
         </div>
         <div class="col-2">
           <drx-checkbox
             [labelCheckbox]="'Danger'"
             [typeCheckbox]="'danger'"></drx-checkbox>
-          <span class="fs-6"><small>.danger-primary-Checkbox</small></span>
+          <span class="fs-6"><small>.danger-primary-checkbox</small></span>
         </div>
         <div class="col-2">
           <drx-checkbox
             [labelCheckbox]="'Success'"
             [typeCheckbox]="'success'"></drx-checkbox>
-          <span class="fs-6"><small>.success-primary-Checkbox</small></span>
+          <span class="fs-6"><small>.success-primary-checkbox</small></span>
         </div>
         <div class="col-2">
           <drx-checkbox
             [labelCheckbox]="'Info'"
             [typeCheckbox]="'info'"></drx-checkbox>
-          <span class="fs-6"><small>.info-primary-Checkbox</small></span>
+          <span class="fs-6"><small>.info-primary-checkbox</small></span>
         </div>
         <div class="col-2">
           <drx-checkbox
             [labelCheckbox]="'Warning'"
             [typeCheckbox]="'warning'"></drx-checkbox>
-          <span class="fs-6"><small>.warning-primary-Checkbox</small></span>
+          <span class="fs-6"><small>.warning-primary-checkbox</small></span>
         </div>
       </div>
       <div class="row mt-2">
@@ -123,32 +123,16 @@
         <div class="col-2">
           <drx-checkbox
             [typeCheckbox]="'red'"
-            [indeterminateCheckbox]="true"></drx-checkbox>
+            [disabledCheckbox]="true"></drx-checkbox>
+            <span class="fs-6"><small>.disabled-primary-checkbox</small></span>
         </div>
         <div class="col-2">
           <drx-checkbox
-            [typeCheckbox]="'blue'"
-            [indeterminateCheckbox]="true"></drx-checkbox>
-        </div>
-        <div class="col-2">
-          <drx-checkbox
-            [typeCheckbox]="'danger'"
-            [indeterminateCheckbox]="true"></drx-checkbox>
-        </div>
-        <div class="col-2">
-          <drx-checkbox
-            [typeCheckbox]="'success'"
-            [indeterminateCheckbox]="true"></drx-checkbox>
-        </div>
-        <div class="col-2">
-          <drx-checkbox
-            [typeCheckbox]="'info'"
-            [indeterminateCheckbox]="true"></drx-checkbox>
-        </div>
-        <div class="col-2">
-          <drx-checkbox
-            [typeCheckbox]="'warning'"
-            [indeterminateCheckbox]="true"></drx-checkbox>
+            [typeCheckbox]="'red'"
+            [labelCheckbox]="'Disabled & Indeterminate'"
+            [disabledCheckbox]="true"
+            [indeterminateCheckbox]="true">></drx-checkbox>
+          <span class="fs-6"><small>.disabled-primary-checkbox</small></span>
         </div>
       </div>
     </mat-card>

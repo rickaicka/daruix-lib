@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-checkbox-page',
@@ -7,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckboxDaruixPageComponent implements OnInit {
 
+  disabledCheckbox:boolean = false
+  indeterminateCheckbox:boolean = false
+  
   constructor() { }
-
+  
   ngOnInit(): void {
   }
 

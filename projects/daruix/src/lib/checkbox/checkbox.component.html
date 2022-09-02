@@ -1,3 +1,5 @@
 <div #checkboxComponent>
-  <mat-checkbox>{{labelCheckbox}}</mat-checkbox>
+  <mat-checkbox [indeterminate]="indeterminateCheckbox" [disabled]="disabledCheckbox">
+    {{disabledCheckbox && !labelCheckbox ? 'Disabled' : labelCheckbox}}
+  </mat-checkbox>
 </div>
