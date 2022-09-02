@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CheckboxDaruixComponent } from './checkbox-daruix.component';
+import { ButtonComponent } from './button.component';
 
-describe('CheckboxDaruixComponent', () => {
-  let component: CheckboxDaruixComponent;
-  let fixture: ComponentFixture<CheckboxDaruixComponent>;
+describe('BtnDaruixComponent', () => {
+  let component: ButtonComponent;
+  let fixture: ComponentFixture<ButtonComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CheckboxDaruixComponent ]
+      declarations: [ ButtonComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CheckboxDaruixComponent);
+    fixture = TestBed.createComponent(ButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

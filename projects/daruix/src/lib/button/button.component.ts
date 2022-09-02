@@ -3,11 +3,11 @@ import { Subject } from 'rxjs';
 import {MatButton} from "@angular/material/button";
 
 @Component({
-  selector: 'lib-btn-daruix',
-  templateUrl: './btn-daruix.component.html',
-  styleUrls: ['./btn-daruix.component.scss']
+  selector: 'drx-button',
+  templateUrl: './button.component.html',
+  styleUrls: ['./button.component.scss']
 })
-export class BtnDaruixComponent implements AfterViewInit  {
+export class ButtonComponent implements AfterViewInit  {
 
   constructor() {
   }

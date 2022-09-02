@@ -3,11 +3,11 @@ import { MatCheckbox } from '@angular/material/checkbox';
 import { Subject } from 'rxjs';
 
 @Component({
-  selector: 'lib-checkbox-daruix',
-  templateUrl: './checkbox-daruix.component.html',
-  styleUrls: ['./checkbox-daruix.component.scss']
+  selector: 'drx-checkbox',
+  templateUrl: './checkbox.component.html',
+  styleUrls: ['./checkbox.component.scss']
 })
-export class CheckboxDaruixComponent implements OnInit {
+export class CheckboxComponent implements OnInit {
 
 
   // a pessoa pode determinar a cor do checkbox (tipo), se ele é indeterminado, se ele está desabilitado e sua label.

@@ -7,7 +7,7 @@
       "projectType": "library",
       "root": "projects/daruix",
       "sourceRoot": "projects/daruix/src",
-      "prefix": "lib",
+      "prefix": "drx",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",

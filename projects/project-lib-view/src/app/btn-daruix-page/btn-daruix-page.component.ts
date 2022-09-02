@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-btn-daruix-page',
+  selector: 'app-button-page',
   templateUrl: './btn-daruix-page.component.html',
   styleUrls: ['./btn-daruix-page.component.scss']
 })
