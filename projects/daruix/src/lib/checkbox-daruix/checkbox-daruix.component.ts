@@ -26,7 +26,14 @@ export class CheckboxDaruixComponent implements OnInit {
   }
 
   ngAfterViewInit(): void {
-    this.checkboxComponent?.nativeElement?.classList.add(`${(this.typeCheckbox ? this.typeCheckbox : 'red')}-primary-checkbox`)
+    this.isDisabled()
   }
 
+  isDisabled(){
+    if(this.disabledCheckbox){
+      this.checkboxComponent?.nativeElement.classList.add(`disabled-primary-checkbox`)
+    }else{
+      this.checkboxComponent?.nativeElement?.classList.add(`${(this.typeCheckbox ? this.typeCheckbox : 'red')}-primary-checkbox`)
+    }
+  }
 }
