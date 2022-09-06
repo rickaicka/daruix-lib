@@ -29,6 +29,14 @@ const routes: Routes = [
         (sl) => sl.SelectDaruixPageModule
       ),
 
+  },
+  {
+    path: 'daruix-input',
+    loadChildren: () =>
+      import("./input-daruix-page/input-daruix-page.module").then(
+        (sl) => sl.InputDaruixPageModule
+      ),
+
   }
 ];
 
