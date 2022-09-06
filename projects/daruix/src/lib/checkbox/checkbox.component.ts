@@ -1,5 +1,4 @@
 import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
-import { MatCheckbox } from '@angular/material/checkbox';
 import { Subject } from 'rxjs';
 
 @Component({
@@ -7,7 +6,7 @@ import { Subject } from 'rxjs';
   templateUrl: './checkbox.component.html',
   styleUrls: ['./checkbox.component.scss']
 })
-export class CheckboxComponent implements OnInit {
+export class DrxCheckboxComponent implements OnInit {
 
 
   // a pessoa pode determinar a cor do checkbox (tipo), se ele é indeterminado, se ele está desabilitado e sua label.

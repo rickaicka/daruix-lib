@@ -7,7 +7,7 @@ import {MatButton} from "@angular/material/button";
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss']
 })
-export class ButtonComponent implements AfterViewInit  {
+export class DrxButtonComponent implements AfterViewInit  {
 
   constructor() {
   }

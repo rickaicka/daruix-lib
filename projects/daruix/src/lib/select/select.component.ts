@@ -5,9 +5,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './select.component.html',
   styleUrls: ['./select.component.css']
 })
-export class SelectComponent implements OnInit {
+export class DrxSelectComponent implements OnInit {
 
   constructor() { }
+  teste='este'
 
   ngOnInit(): void {
   }

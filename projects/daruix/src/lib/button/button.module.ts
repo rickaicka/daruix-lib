@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ButtonComponent } from './button.component';
+import { DrxButtonComponent} from './button.component';
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 import {MatCheckboxModule} from "@angular/material/checkbox";
@@ -9,7 +9,7 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
 
 @NgModule({
   declarations: [
-    ButtonComponent
+    DrxButtonComponent
   ],
   imports: [
     CommonModule,
@@ -18,10 +18,10 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
     MatCheckboxModule
   ],
   exports: [
-    ButtonComponent,
+    DrxButtonComponent,
     MatButtonModule,
     MatIconModule,
     MatCheckboxModule
   ]
 })
-export class ButtonModule { }
+export class DrxButtonModule { }

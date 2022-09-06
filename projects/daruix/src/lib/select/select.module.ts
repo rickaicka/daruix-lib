@@ -1,12 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {DrxSelectComponent} from "./select.component";
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    DrxSelectComponent
+  ],
   imports: [
     CommonModule
+  ],
+  exports:[
+    DrxSelectComponent
   ]
 })
-export class SelectModule { }
+export class DrxSelectModule { }

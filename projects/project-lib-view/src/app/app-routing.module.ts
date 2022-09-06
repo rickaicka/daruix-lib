@@ -11,7 +11,7 @@ const routes: Routes = [
     path: 'daruix-btn',
     loadChildren: () =>
       import("./btn-daruix-page/btn-daruix-page.module").then(
-        (che) => che.BtnDaruixPageModule
+        (btn) => btn.BtnDaruixPageModule
       ),
   },
   {
@@ -19,6 +19,14 @@ const routes: Routes = [
     loadChildren: () =>
       import("./checkbox-daruix-page/checkbox-daruix-page.module").then(
         (che) => che.CheckboxDaruixPageModule
+      ),
+
+  },
+  {
+    path: 'daruix-select',
+    loadChildren: () =>
+      import("./select-daruix-page/select-daruix-page.module").then(
+        (sl) => sl.SelectDaruixPageModule
       ),
 
   }

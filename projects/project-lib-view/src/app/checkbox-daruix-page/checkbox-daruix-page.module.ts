@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { CheckboxDaruixPageRoutingModule } from './checkbox-daruix-page-routing.module';
 import {CheckboxDaruixPageComponent} from "./checkbox-daruix-page.component";
-import {DaruixModule} from "../../../../daruix/src/lib/daruix.module";
 import {MatCardModule} from "@angular/material/card";
+import {DrxCheckboxModule} from "daruix";
 
 
 @NgModule({
@@ -14,7 +14,7 @@ import {MatCardModule} from "@angular/material/card";
   imports: [
     CommonModule,
     CheckboxDaruixPageRoutingModule,
-    DaruixModule,
+    DrxCheckboxModule,
     MatCardModule
   ],
   exports:[

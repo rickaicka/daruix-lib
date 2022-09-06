@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { BtnDaruixPageRoutingModule } from './btn-daruix-page-routing.module';
 import {BtnDaruixPageComponent} from "./btn-daruix-page.component";
-import {DaruixModule} from "../../../../daruix/src/lib/daruix.module";
 import {MatCardModule} from "@angular/material/card";
+import {DrxButtonModule} from "daruix";
 
 
 @NgModule({
@@ -14,7 +14,7 @@ import {MatCardModule} from "@angular/material/card";
   imports: [
     CommonModule,
     BtnDaruixPageRoutingModule,
-    DaruixModule,
+    DrxButtonModule,
     MatCardModule
   ],
   exports:[
