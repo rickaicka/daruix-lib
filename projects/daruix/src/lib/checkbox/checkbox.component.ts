@@ -8,7 +8,6 @@ import { Subject } from 'rxjs';
 })
 export class DrxCheckboxComponent implements OnInit {
 
-
   // a pessoa pode determinar a cor do checkbox (tipo), se ele é indeterminado, se ele está desabilitado e sua label.
 
   clickCheckbox: Subject<any> = new Subject;
