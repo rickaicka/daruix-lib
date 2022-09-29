@@ -25,3 +25,10 @@
   }
 }
 
+@mixin inputColors($inputColor){
+  ::ng-deep .mat-form-field-appearance-outline{
+    & .mat-form-field-outline-thick, &.mat-focused .mat-form-field-outline-thick, &.mat-focused .mat-form-field-label{
+      color: $inputColor !important;
+    }
+  }
+}

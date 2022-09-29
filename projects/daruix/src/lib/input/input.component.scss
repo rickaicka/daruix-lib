@@ -1,19 +1,38 @@
 @import "../../../../shared-styles/sass/styles.scss";
 
-::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
-    color: $red-primary;
-    box-shadow: 1px 1px 8px $red-border;
-}
+// ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+//     color: $red-primary;
+// }
 
-::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-thick {
-    color: $red-primary;
-}
+// ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-thick {
+//     color: $red-primary;
+// }
 
-::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-label {
-    color: $red-primary;
-}
+// ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-label {
+//     color: $red-primary;
+// }
 
 ::ng-deep .mat-form-field-appearance-outline .mat-input-element:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 30px white inset;
     box-shadow: 0 0 0 30px white inset;
+}
+
+.red-primary-input{
+    @include inputColors($red-primary);
+}
+
+.blue-primary-input{
+    @include inputColors($blue-primary);
+}
+
+.success-primary-input{
+    @include inputColors($success-primary);
+}
+
+.danger-primary-input{
+    @include inputColors($danger-primary);
+}
+
+.warning-primary-input{
+    @include inputColors($warning-primary);
 }
