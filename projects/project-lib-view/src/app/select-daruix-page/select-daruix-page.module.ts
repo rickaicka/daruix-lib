@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { SelectDaruixPageRoutingModule } from './select-daruix-page-routing.module';
 import {SelectDaruixPageComponent} from "./select-daruix-page.component";
-import { DrxSelectModule } from 'projects/daruix/src/public-api';
+import {DrxSelectModule} from "daruix";
 
 
 @NgModule({
