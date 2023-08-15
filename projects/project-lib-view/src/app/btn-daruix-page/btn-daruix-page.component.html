@@ -1,0 +1,152 @@
+<div class="vh-100 bg-light container-fluid py-3">
+
+  <mat-card class="shadow p-3 mb-4 bg-body rounded">
+    <div class="row mt-2">
+      <div class="col-12">
+        <p class="fs-2">How to use</p>
+
+        <span>The tag: </span>
+        <code>&lt;drx-button&gt;</code>
+        <code>&lt;/drx-button&gt;</code>
+        <br>
+        <br>
+        <span>The <code>@Input()</code> list: </span>
+        <br>
+        <code>[labelBtn]</code><span> -> set the label of the button</span>
+        <br>
+        <code>[typeBtn]</code><span> -> set the type of the button and set it's colors</span>
+        <br>
+        <code>[icon]</code><span> -> set the icon of the button<small><var>*is optional</var></small></span>
+      </div>
+      <div class="col-12 mt-2">
+        <span>Example: </span>
+        <code>&lt;drx-button  <code>[labelBtn]</code>='Red'  <code>[typeBtn]</code>='red'  <code>[icon]</code>='home'&gt;</code>
+        <code>&lt;/drx-button&gt;</code>
+      </div>
+      <div class="col-2 mt-2">
+        <drx-button
+          [labelBtn]="'Red'"
+          [typeBtn]="'red'"
+          [icon]="'home'"></drx-button>
+      </div>
+    </div>
+  </mat-card>
+
+  <mat-card class="shadow p-3 mb-5 bg-body rounded">
+    <p class="fs-4">All examples</p>
+    <div class="row">
+      <div class="col-2">
+        <drx-button
+          [labelBtn]="'Red'"
+          [typeBtn]="'red'"></drx-button>
+        <span class="fs-6"><small>.red-primary-button</small></span>
+      </div>
+      <div class="col-2">
+        <drx-button
+          [labelBtn]="'Blue'"
+          [typeBtn]="'blue'"></drx-button>
+        <span class="fs-6"><small>.blue-primary-button</small></span>
+      </div>
+      <div class="col-2">
+        <drx-button
+          [labelBtn]="'Danger'"
+          [typeBtn]="'danger'"></drx-button>
+        <span class="fs-6"><small>.danger-primary-button</small></span>
+      </div>
+      <div class="col-2">
+        <drx-button
+          [labelBtn]="'Success'"
+          [typeBtn]="'success'"></drx-button>
+        <span class="fs-6"><small>.success-primary-button</small></span>
+      </div>
+      <div class="col-2">
+        <drx-button
+          [labelBtn]="'Info'"
+          [typeBtn]="'info'"></drx-button>
+        <span class="fs-6"><small>.info-primary-button</small></span>
+      </div>
+      <div class="col-2">
+        <drx-button
+          [labelBtn]="'Warning'"
+          [typeBtn]="'warning'"></drx-button>
+        <span class="fs-6"><small>.warning-primary-button</small></span>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-2">
+        <drx-button
+          [labelBtn]="'Red'"
+          [typeBtn]="'red-outline'"
+          [icon]="'home'"></drx-button>
+        <span class="fs-6"><small>.red-outline-primary-button</small></span>
+      </div>
+      <div class="col-2">
+        <drx-button
+          [labelBtn]="'Blue'"
+          [typeBtn]="'blue-outline'"
+          [icon]="'home'"></drx-button>
+        <span class="fs-6"><small>.blue-outline-primary-button</small></span>
+      </div>
+      <div class="col-2">
+        <drx-button
+          [labelBtn]="'Danger'"
+          [typeBtn]="'danger-outline'"
+          [icon]="'home'"></drx-button>
+        <span class="fs-6"><small>.danger-outline-primary-button</small></span>
+      </div>
+      <div class="col-2">
+        <drx-button
+          [labelBtn]="'Success'"
+          [typeBtn]="'success-outline'"
+          [icon]="'home'"></drx-button>
+        <span class="fs-6"><small>.success-outline-primary-button</small></span>
+      </div>
+      <div class="col-2">
+        <drx-button
+          [labelBtn]="'Info'"
+          [typeBtn]="'info-outline'"
+          [icon]="'home'"></drx-button>
+        <span class="fs-6"><small>.info-outline-primary-button</small></span>
+      </div>
+      <div class="col-2">
+        <drx-button
+          [labelBtn]="'Warning'"
+          [typeBtn]="'warning-outline'"
+          [icon]="'home'"></drx-button>
+        <span class="fs-6"><small>.warning-outline-primary-button</small></span>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-2">
+        <drx-button
+          [typeBtn]="'red-outline'"
+          [icon]="'home'"></drx-button>
+      </div>
+      <div class="col-2">
+        <drx-button
+          [typeBtn]="'blue-outline'"
+          [icon]="'home'"></drx-button>
+      </div>
+      <div class="col-2">
+        <drx-button
+          [typeBtn]="'danger-outline'"
+          [icon]="'home'"></drx-button>
+      </div>
+      <div class="col-2">
+        <drx-button
+          [typeBtn]="'success-outline'"
+          [icon]="'home'"></drx-button>
+      </div>
+      <div class="col-2">
+        <drx-button
+          [typeBtn]="'info-outline'"
+          [icon]="'home'"></drx-button>
+      </div>
+      <div class="col-2">
+        <drx-button
+          [typeBtn]="'warning-outline'"
+          [icon]="'home'"></drx-button>
+      </div>
+    </div>
+  </mat-card>
+</div>

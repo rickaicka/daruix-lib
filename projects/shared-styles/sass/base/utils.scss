@@ -1,0 +1,10 @@
+@import './mixins';
+
+.btn-base {
+  font-family: headingsType(h1);
+  color: $white;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+}

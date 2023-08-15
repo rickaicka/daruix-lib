@@ -1,0 +1,50 @@
+@import "../../../../shared-styles/sass/styles.scss";
+
+.red-primary-checkbox{
+  @include checkboxColors($red-primary, $red-border);
+  ::ng-deep .mat-checkbox:not(.mat-checkbox-disabled) .mat-checkbox-ripple .mat-ripple-element{
+    background-color: $red-primary!important;
+  }
+}
+
+.blue-primary-checkbox{
+  @include checkboxColors($blue-primary, $blue-border);
+  ::ng-deep .mat-checkbox:not(.mat-checkbox-disabled) .mat-checkbox-ripple .mat-ripple-element{
+    background-color: $blue-primary!important;
+  }
+}
+
+.success-primary-checkbox{
+    @include checkboxColors($success-primary, $success-border);
+    ::ng-deep .mat-checkbox:not(.mat-checkbox-disabled) .mat-checkbox-ripple .mat-ripple-element{
+        background-color: $success-primary!important;
+    }
+}
+
+.danger-primary-checkbox{
+    @include checkboxColors($danger-primary, $danger-border);
+    ::ng-deep .mat-checkbox:not(.mat-checkbox-disabled) .mat-checkbox-ripple .mat-ripple-element{
+        background-color: $danger-primary!important;
+    }
+}
+
+.info-primary-checkbox{
+    @include checkboxColors($info-primary, $info-border);
+    ::ng-deep .mat-checkbox:not(.mat-checkbox-disabled) .mat-checkbox-ripple .mat-ripple-element{
+        background-color: $info-primary!important;
+    }
+}
+
+.warning-primary-checkbox{
+    @include checkboxColors($warning-primary, $warning-border);
+    ::ng-deep .mat-checkbox:not(.mat-checkbox-disabled) .mat-checkbox-ripple .mat-ripple-element{
+        background-color: $warning-primary!important;
+    }
+}
+
+.disabled-primary-checkbox{
+    @include checkboxColors($base-gray, $base-gray);
+    ::ng-deep .mat-checkbox:not(.mat-checkbox-disabled) .mat-checkbox-ripple .mat-ripple-element{
+        background-color: $base-gray!important;
+    }
+}

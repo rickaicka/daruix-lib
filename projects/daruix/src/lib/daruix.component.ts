@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-daruix',
+  selector: 'drx-daruix',
   template: `
     <p>
       daruix works!

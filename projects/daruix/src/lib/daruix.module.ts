@@ -1,20 +1,27 @@
 import { NgModule } from '@angular/core';
 import { DaruixComponent } from './daruix.component';
-import { BtnDaruixComponent } from './btn-daruix/btn-daruix.component';
-import {BtnDaruixModule} from "./btn-daruix/btn-daruix.module";
-
+import { DrxButtonModule} from "./button/button.module";
+import { DrxCheckboxModule} from './checkbox/checkbox.module';
+import { DrxSelectModule } from "./select/select.module";
+import { DrxInputModule } from "./input/input.module";
 
 
 @NgModule({
   declarations: [
-    DaruixComponent
+    DaruixComponent,
   ],
   imports: [
-    BtnDaruixModule
+    DrxButtonModule,
+    DrxCheckboxModule,
+    DrxSelectModule,
+    DrxInputModule
   ],
   exports: [
     DaruixComponent,
-    BtnDaruixModule
+    DrxButtonModule,
+    DrxCheckboxModule,
+    DrxSelectModule,
+    DrxInputModule
   ]
 })
 export class DaruixModule { }
