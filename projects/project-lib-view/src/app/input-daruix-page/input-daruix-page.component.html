@@ -1,1 +1,136 @@
-<drx-input></drx-input>
+<div class="vh-100 bg-light container-fluid py-3">
+
+    <mat-card class="shadow p-3 mb-4 bg-body rounded">
+      <div class="row mt-2">
+        <div class="col-12">
+          <p class="fs-2">How to use</p>
+
+          <span>The tag: </span>
+          <code>&lt;drx-input&gt;</code>
+          <code>&lt;/drx-input&gt;</code>
+          <br>
+          <br>
+          <span>The <code>@Input()</code> list: </span>
+          <br>
+          <code>[labelInput]</code><span> -> set the label of the Input</span>
+          <br>
+          <code>[colorInput]</code><span> -> set the type of the Input and set it's colors</span>
+          <br>
+          <code>[disabledInput]</code><span> -> set if Input is disabled of the button<small><var>*is optional</var></small></span>
+        </div>
+        <div class="col-12 mt-2">
+          <span>Example: </span>
+          <code>&lt;drx-input  <code>[labelInput]</code>='Red'  <code>[colorInput]</code>='red'  <code>[indeterminateInput]</code>=true  <code>[disabledInput]</code>=false&gt;</code>
+          <code>&lt;/drx-input&gt;</code>
+        </div>
+        <div class="col-2 mt-2">
+          <drx-input
+            [labelInput]="'Red'"
+            [colorInput]="'red'"
+            ></drx-input>
+        </div>
+      </div>
+    </mat-card>
+
+    <mat-card class="shadow p-3 mb-5 bg-body rounded">
+      <p class="fs-4">All examples</p>
+      <div class="row">
+        <div class="col-2">
+          <drx-input
+            [labelInput]="'Red'"
+            [colorInput]="'red'"></drx-input>
+          <span class="fs-6"><small>.red-primary-Input</small></span>
+        </div>
+        <div class="col-2">
+          <drx-input
+            [labelInput]="'Blue'"
+            [colorInput]="'blue'"></drx-input>
+          <span class="fs-6"><small>.blue-primary-Input</small></span>
+        </div>
+        <div class="col-2">
+          <drx-input
+            [labelInput]="'Danger'"
+            [colorInput]="'danger'"></drx-input>
+          <span class="fs-6"><small>.danger-primary-Input</small></span>
+        </div>
+        <div class="col-2">
+          <drx-input
+            [labelInput]="'Success'"
+            [colorInput]="'success'"></drx-input>
+          <span class="fs-6"><small>.success-primary-Input</small></span>
+        </div>
+        <div class="col-2">
+          <drx-input
+            [labelInput]="'Info'"
+            [colorInput]="'info'"></drx-input>
+          <span class="fs-6"><small>.info-primary-Input</small></span>
+        </div>
+        <div class="col-2">
+          <drx-input
+            [labelInput]="'Warning'"
+            [colorInput]="'warning'"></drx-input>
+          <span class="fs-6"><small>.warning-primary-Input</small></span>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-2">
+          <drx-input
+            [labelInput]="'Red'"
+            [colorInput]="'red'"
+            ></drx-input>
+          <span class="fs-6"><small>.red-primary-indeterminate-Input</small></span>
+        </div>
+        <div class="col-2">
+          <drx-input
+            [labelInput]="'Blue'"
+            [colorInput]="'blue'"
+            ></drx-input>
+          <span class="fs-6"><small>.blue-primary-indeterminate-Input</small></span>
+        </div>
+        <div class="col-2">
+          <drx-input
+            [labelInput]="'Danger'"
+            [colorInput]="'danger'"
+            ></drx-input>
+          <span class="fs-6"><small>.danger-primary-indeterminate-Input</small></span>
+        </div>
+        <div class="col-2">
+          <drx-input
+            [labelInput]="'Success'"
+            [colorInput]="'success'"
+            ></drx-input>
+          <span class="fs-6"><small>.success-primary-indeterminate-Input</small></span>
+        </div>
+        <div class="col-2">
+          <drx-input
+            [labelInput]="'Info'"
+            [colorInput]="'info'"
+            ></drx-input>
+          <span class="fs-6"><small>.info-primary-indeterminate-Input</small></span>
+        </div>
+        <div class="col-2">
+          <drx-input
+            [labelInput]="'Warning'"
+            [colorInput]="'warning'"
+            ></drx-input>
+          <span class="fs-6"><small>.warning-primary-indeterminate-Input</small></span>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-2">
+          <drx-input
+            [colorInput]="'red'"
+            [disabledInput]="true"></drx-input>
+            <span class="fs-6"><small>.disabled-primary-Input</small></span>
+        </div>
+        <div class="col-2">
+          <drx-input
+            [colorInput]="'red'"
+            [labelInput]="'Disabled & Indeterminate'"
+            [disabledInput]="true"
+            >></drx-input>
+          <span class="fs-6"><small>.disabled-primary-Input</small></span>
+        </div>
+      </div>
+    </mat-card>
+  </div>
