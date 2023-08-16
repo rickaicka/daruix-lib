@@ -1,6 +1,6 @@
 {
   "name": "daruix",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "peerDependencies": {
     "@angular/cdk": "^16.2.0",
     "@angular/common": "^16.2.0",
