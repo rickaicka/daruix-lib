@@ -1,6 +1,6 @@
 import {AfterViewInit, Component, Input, ViewChild} from '@angular/core';
 import { Subject } from 'rxjs';
-import {MatButton} from "@angular/material/button";
+import {MatLegacyButton as MatButton} from "@angular/material/legacy-button";
 
 @Component({
   selector: 'drx-button',
