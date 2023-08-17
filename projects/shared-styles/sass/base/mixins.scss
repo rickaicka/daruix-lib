@@ -8,6 +8,8 @@
     background-color: $colorHover;
     @if $outline{
       color: $outline;
+    } @else {
+      color: $white;
     }
   }
 }
