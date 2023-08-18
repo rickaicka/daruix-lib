@@ -32,7 +32,7 @@ $mobile: 430px;
 $mqDesk: 1441px;
 
 $fontText: 'Nunito', sans-serif;
-$fontHeaders: 'Blinker', sans-serif;
+$fontHeaders: 'Blinker', sans-serif!important;
 
 $colors:(
   'text-base': $text-black,

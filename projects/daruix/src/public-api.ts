@@ -13,3 +13,5 @@ export * from './lib/select/select.component';
 export * from './lib/select/select.module';
 export * from './lib/input/input.component';
 export * from './lib/input/input.module';
+export * from './lib/header-nav/header-nav.component';
+export * from './lib/header-nav/header-nav.module';

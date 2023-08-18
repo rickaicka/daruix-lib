@@ -1,0 +1,6 @@
+@import "../../../../shared-styles/sass/styles.scss";
+.li-nav {
+  & a{
+    @include textStyle(16, $white, 500, uppercase, true, h4)
+  }
+}

@@ -1,0 +1,15 @@
+@import "../../../../shared-styles/sass/styles.scss";
+
+.drx-header-nav{
+  background-color: $red-primary;
+  padding: calculateRem(40);
+  & ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: calculateRem(16);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}

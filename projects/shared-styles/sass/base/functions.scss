@@ -6,7 +6,7 @@
 }
 
 @function headingsType($typeText) {
-    @if ($typeText == h1 or $typeText == h2 or $typeText == h3 or $typeText == h4) {
+    @if ($typeText == h1 or $typeText == h2 or $typeText == h3 or $typeText == h4 or $typeText == link) {
         @return $fontHeaders;
     }
     @if ($typeText == regular) {

@@ -37,6 +37,14 @@ const routes: Routes = [
         (sl) => sl.InputDaruixPageModule
       ),
 
+  },
+  {
+    path: 'daruix-header-nav',
+    loadChildren: () =>
+      import("./header-nav-page/header-nav-page.module").then(
+        (sl) => sl.HeaderNavPageModule
+      ),
+
   }
 ];
 
