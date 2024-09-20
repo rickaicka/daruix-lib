@@ -31,6 +31,36 @@
             "tsConfig": "projects/daruix/tsconfig.spec.json",
             "karmaConfig": "projects/daruix/karma.conf.js"
           }
+        },
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "configDir": "projects/daruix/.storybook",
+            "browserTarget": "daruix:build",
+            "compodoc": true,
+            "compodocArgs": [
+              "-e",
+              "json",
+              "-d",
+              "projects/daruix"
+            ],
+            "port": 6007
+          }
+        },
+        "build-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "configDir": "projects/daruix/.storybook",
+            "browserTarget": "daruix:build",
+            "compodoc": true,
+            "compodocArgs": [
+              "-e",
+              "json",
+              "-d",
+              "projects/daruix"
+            ],
+            "outputDir": "dist/storybook/daruix"
+          }
         }
       }
     },
